@@ -1,0 +1,17 @@
+group 'ua.golovchenko.artem'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+//    compile group: 'com.adobe.testing', name: 's3mock', version: '2.0.5'
+//    compile group: 'com.adobe.testing', name: 's3mock-testsupport-common', version: '2.0.1'
+    compile group: 'com.adobe.testing', name: 's3mock-junit4', version: '2.0.1'
+}
